@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Spring-3.2.18.RELEASE" type="spring">
+    <properties version="3.2.18.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-aspects-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-context-support-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-aop-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-core-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-instrument-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-expression-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-beans-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-instrument-tomcat-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-context-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-jms-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-jdbc-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-orm-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-oxm-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-tx-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/spring-test-3.2.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/pows-services/lib/aopalliance-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

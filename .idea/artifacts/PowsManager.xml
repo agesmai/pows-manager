@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PowsManager">
+    <output-path>$PROJECT_DIR$/out/artifacts/PowsManager</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="pows-services/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pows-services" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Jersey-2.26+" />
+          <element id="file-copy" path="$PROJECT_DIR$/pows-services/lib/ojdbc7.jar" />
+          <element id="library" level="project" name="Spring-3.2.18.RELEASE" />
+          <element id="library" level="project" name="Spring Security-3.2.5" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
