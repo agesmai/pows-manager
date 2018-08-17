@@ -57,6 +57,14 @@ public class PowsUserService {
         return ops.getUserByLogin(login);
     }
 
+    @GET
+    @Path("{login}/uid")
+    @Produces("application/json")
+    public int getUidByLogin(@PathParam("login") String login) {
+        UserOpsImpl ops = new UserOpsImpl();
+        return ops.getUserId(login);
+    }
+
     @POST
     @Path("new")
     @Consumes(MediaType.APPLICATION_JSON)

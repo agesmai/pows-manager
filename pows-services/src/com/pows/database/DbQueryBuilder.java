@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class DbQueryBuilder {
     public String ReadQuery(String fSelect, String fFrom, String fWhere) {
-        String sql = "";
+        String sql;
         if (fSelect.equals("")) {
             fSelect = "1";
         }
         if (fFrom.equals("")) {
             fFrom = "DUAL";
         }
-        if ((!fSelect.equals("1")) && (!fFrom.equals("DUAL")) && (!fWhere.equals(""))) {
+        if ((!fSelect.equals("1")) && (!fFrom.equals("DUAL")) && (!fWhere.equals("")))
             sql = "SELECT " + fSelect + " FROM " + fFrom + " WHERE " + fWhere;
-        } else {
+        else {
             sql = "SELECT " + fSelect + " FROM " + fFrom;
         }
 
@@ -21,29 +21,53 @@ public class DbQueryBuilder {
     }
 
     public String generateColumnSet(ArrayList<String> columns) {
-        String columnSet = "";
+        StringBuilder columnSet = new StringBuilder();
         for (String column : columns) {
-            columnSet = columnSet + column + ", ";
+            columnSet.append(column).append(", ");
         }
 
-        if (!columnSet.equals("") && columnSet.length() > 0 && columnSet.charAt(columnSet.length() - 2) == ',') {
-            columnSet = columnSet.substring(0, columnSet.length() - 2);
+        if (!columnSet.toString().equals("") && columnSet.length() > 0 && columnSet.charAt(columnSet.length() - 2) == ',') {
+            columnSet = new StringBuilder(columnSet.substring(0, columnSet.length() - 2));
         }
 
-        return columnSet;
+        return columnSet.toString();
     }
 
     public String generateValueSet(ArrayList<String> values) {
-        String valueSet = "";
+        StringBuilder valueSet = new StringBuilder();
         for (String value : values) {
-            valueSet = valueSet + "'" + value + "', ";
+            valueSet.append("'").append(value).append("', ");
         }
 
-        if (!valueSet.equals("") && valueSet.length() > 0 && valueSet.charAt(valueSet.length() - 2) == ',') {
-            valueSet = valueSet.substring(0, valueSet.length() - 2);
+        if (!valueSet.toString().equals("") && valueSet.length() > 0 && valueSet.charAt(valueSet.length() - 2) == ',') {
+            valueSet = new StringBuilder(valueSet.substring(0, valueSet.length() - 2));
         }
 
-        return valueSet;
+        return valueSet.toString();
+    }
+
+    public String generateUpdatePair(String updateColumn, String updateValue) {
+        String upair = "";
+        if (updateColumn != null && updateValue != null) {
+            upair = updateColumn + " = " + "'" + updateValue + "'";
+        }
+        return upair;
+    }
+
+//    public String generateUpdatePair(String updateColumn, Number updateValue) {
+//        String upair = "";
+//        if (updateColumn != null && updateValue != null) {
+//            upair = updateColumn + " = " + String.valueOf(updateValue);
+//        }
+//        return upair;
+//    }
+
+    public String generateUpdateSet(ArrayList<String> updatePairs) {
+        StringBuilder uSet = new StringBuilder();
+        for (String upair : updatePairs) {
+            uSet.append(", ").append(upair);
+        }
+        return uSet.toString();
     }
 
     public String InsertQuery(String fInto, String columnSet, String valueSet) {
@@ -54,18 +78,20 @@ public class DbQueryBuilder {
         return sql;
     }
 
-    public String DeleteQuery() {
+//    public String DeleteQuery() {
+//        String sql = "";
+//        return sql;
+//    }
+
+    public String UpdateQuery(String fTable, String fSet, String fWhere) {
         String sql = "";
+        if (fTable != null && fSet != null && fWhere != null) {
+            sql = "UPDATE " + fTable + " SET " + fSet + " WHERE " + fWhere;
+        } else {
+            return sql;
+        }
+
         return sql;
     }
 
-    public String UpdateQuery() {
-        String sql = "";
-        return sql;
-    }
-
-    public String InsertOrUpdateQuery() {
-        String sql = "";
-        return sql;
-    }
 }

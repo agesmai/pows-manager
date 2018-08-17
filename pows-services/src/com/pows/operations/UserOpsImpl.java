@@ -69,7 +69,6 @@ public class UserOpsImpl implements UserOps {
     @Override
     public User getUserByUid(int uid) {
         SchemaLoader schema = new SchemaLoader();
-//        schema.init();
         Connection conn = new DbConnectionImpl().getConnection();
         if (conn != null) {
             System.out.println("You made it, take control your database now!");
@@ -103,7 +102,6 @@ public class UserOpsImpl implements UserOps {
     @Override
     public User getUserByLogin(String login) {
         SchemaLoader schema = new SchemaLoader();
-//        schema.init();
         Connection conn = new DbConnectionImpl().getConnection();
         if (conn != null) {
             System.out.println("You made it, take control your database now!");
@@ -139,7 +137,6 @@ public class UserOpsImpl implements UserOps {
     @Override
     public List<User> getAllUsers() {
         SchemaLoader schema = new SchemaLoader();
-//        schema.init();
         Connection conn = new DbConnectionImpl().getConnection();
         if (conn != null) {
             System.out.println("You made it, take control your database now!");
@@ -174,7 +171,6 @@ public class UserOpsImpl implements UserOps {
     public List<User> getUserListWithLimit(int fromUid, int limitRecord) {
 
         SchemaLoader schema = new SchemaLoader();
-//        schema.init();
         Connection conn = new DbConnectionImpl().getConnection();
         if (conn != null) {
             System.out.println("You made it, take control your database now!");
@@ -209,7 +205,6 @@ public class UserOpsImpl implements UserOps {
     @Override
     public List<User> getUserListByUid(int fromUid, int toUid) {
         SchemaLoader schema = new SchemaLoader();
-//        schema.init();
 
         Connection conn = new DbConnectionImpl().getConnection();
         if (conn != null) {
@@ -254,11 +249,13 @@ public class UserOpsImpl implements UserOps {
 
     @Override
     public User createUser(User newUser) {
-        SchemaLoader schema = new SchemaLoader();
-        Connection conn = new DbConnectionImpl().getConnection();
-        ArrayList<String> columns = new ArrayList<>();
-        ArrayList<String> values = new ArrayList<>();
+
         if (newUser.getLogin() != null) {
+
+            SchemaLoader schema = new SchemaLoader();
+            Connection conn = new DbConnectionImpl().getConnection();
+            ArrayList<String> columns = new ArrayList<>();
+            ArrayList<String> values = new ArrayList<>();
 
             columns.add("LOGIN");
             values.add(newUser.getLogin());
@@ -331,15 +328,116 @@ public class UserOpsImpl implements UserOps {
 
     @Override
     public User updateUser(int uid, User replaceUser) {
-        if ((0 <= uid) && (uid < 10)) {
+        if (uid >= 10) {
+            SchemaLoader schema = new SchemaLoader();
+            Connection conn = new DbConnectionImpl().getConnection();
+            ArrayList<String> updatePairs = new ArrayList<>();
+            User currentUser = this.getUserByUid(uid);
 
+            replaceUser.setUid(uid);
+
+            if (replaceUser.getLogin() == null) {
+                replaceUser.setLogin(currentUser.getLogin());
+            }
+
+            if (replaceUser.getPassword() == null) {
+                replaceUser.setPassword(currentUser.getPassword());
+            }
+
+            if (replaceUser.getStatus() == null) {
+                replaceUser.setStatus(currentUser.getStatus());
+            }
+
+            // updatePairs.add(new DbQueryBuilder().generateUpdatePair("USERID", uid));
+            updatePairs.add(new DbQueryBuilder().generateUpdatePair("LOGIN", replaceUser.getLogin()));
+            updatePairs.add(new DbQueryBuilder().generateUpdatePair("PASSWORD", replaceUser.getPassword()));
+            updatePairs.add(new DbQueryBuilder().generateUpdatePair("STATUS", replaceUser.getStatus()));
+
+            if (conn != null) {
+                try {
+                    Statement stmt = conn.createStatement();
+                    String updateSet = new DbQueryBuilder().generateUpdateSet(updatePairs);
+                    String sql = new DbQueryBuilder().UpdateQuery(schema.getUserTable(), updateSet, "USERID = " + String.valueOf(uid));
+                    System.out.println("update sql: " + sql);
+                    System.out.println("Trying to update user...");
+                    try {
+                        stmt.executeUpdate(sql);
+                        System.out.println("User with id: " + replaceUser.getUid() + " is updated successfully !!!");
+                        return replaceUser;
+                    } catch (SQLException e) {
+                        System.out.println(e.getMessage());
+                        System.out.println("User with id: " + replaceUser.getUid() + " failed to update !!!");
+                        return null;
+                    }
+
+                } catch (SQLException e) {
+                    System.out.println("Connection Failed! Check output console");
+                    e.printStackTrace();
+                    return null;
+                } finally {
+                    try {
+                        conn.close();
+                    } catch (SQLException e) {
+                        System.out.println("Connection Close Failed! Check output console");
+                        e.printStackTrace();
+                    }
+                }
+            } else {
+                System.out.println("Failed to make connection! User is not updated");
+                return null;
+            }
+
+        } else {
+            System.out.println("UID below 10 is not supported !!!");
+            return null;
         }
-        return null;
+
     }
 
     @Override
     public int getUserId(String login) {
-        return 0;
+        SchemaLoader schema = new SchemaLoader();
+        Connection conn = new DbConnectionImpl().getConnection();
+        if (conn != null) {
+            try {
+                Statement stmt = conn.createStatement();
+
+                String sql = new DbQueryBuilder().ReadQuery("USERID", schema.getUserTable(), "LOGIN LIKE '" + login + "'");
+
+                try {
+                    ResultSet rs = stmt.executeQuery(sql);
+                    try {
+                        int userId = 9;
+                        while (rs.next()) {
+                            userId = rs.getInt("USERID");
+                        }
+                        return userId;
+                    } catch (SQLException e) {
+                        System.out.println("Result set Failed! Check output console");
+                        e.printStackTrace();
+                        return 9;
+                    }
+                } catch (SQLException e) {
+                    System.out.println(e.getMessage());
+                    return 9;
+                }
+
+            } catch (SQLException e) {
+                System.out.println("Connection Failed! Check output console");
+                e.printStackTrace();
+                return 9;
+            } finally {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    System.out.println("Connection Close Failed! Check output console");
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            System.out.println("Failed to make connection! User is not updated");
+            return 9;
+        }
     }
 
     @Override
