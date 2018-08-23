@@ -2,7 +2,7 @@ package com.pows.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.pows.objects.User;
+import com.pows.entity.User;
 
 public class JsonBuilder {
     public static void main(String[] args) {

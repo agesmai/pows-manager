@@ -1,4 +1,4 @@
-package com.pows.objects;
+package com.pows.entity;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

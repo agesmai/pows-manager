@@ -2,18 +2,16 @@ package com.pows.operations;
 
 import com.pows.database.DbConnectionImpl;
 import com.pows.database.DbQueryBuilder;
-import com.pows.objects.User;
+import com.pows.entity.User;
 import com.pows.utils.SchemaLoader;
 import com.pows.validations.UserValidation;
 
 import javax.json.JsonObject;
-import javax.ws.rs.core.Response;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class UserOpsImpl implements UserOps {

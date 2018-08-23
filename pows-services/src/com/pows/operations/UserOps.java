@@ -1,9 +1,8 @@
 package com.pows.operations;
 
-import com.pows.objects.User;
+import com.pows.entity.User;
 
 import javax.json.JsonObject;
-import java.util.HashMap;
 import java.util.List;
 
 public interface UserOps {

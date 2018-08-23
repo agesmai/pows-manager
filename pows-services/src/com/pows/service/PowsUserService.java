@@ -1,13 +1,12 @@
 package com.pows.service;
 
-import com.pows.objects.User;
+import com.pows.entity.User;
 import com.pows.operations.UserOpsImpl;
 
 import javax.json.JsonObject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 // The Java class will be hosted at the URI path "/api"
