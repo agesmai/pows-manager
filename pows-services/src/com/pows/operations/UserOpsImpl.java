@@ -445,7 +445,30 @@ public class UserOpsImpl implements UserOps {
 
     @Override
     public Boolean revokeUser(String login) {
-        return null;
+        if (login.equals("admin")) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
+    @Override
+    public Boolean enableUser(String login) {
+        if (login.equals("admin")) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    @Override
+    public Boolean disableUser(String login) {
+        if (login.equals("admin")) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     @Override

@@ -32,6 +32,10 @@ public interface UserOps {
     // Revoke User Function (@PATCH) -- Change status to "revoked" instead delete user from db
     Boolean revokeUser(String login);
 
+    Boolean enableUser(String login);
+
+    Boolean disableUser(String login);
+
     // DELETE User Function (@DELETE)
     Boolean deleteUser(int uid);
 }

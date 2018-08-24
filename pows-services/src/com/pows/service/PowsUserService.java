@@ -91,6 +91,30 @@ public class PowsUserService {
         return ops.modifyUser(login, attributes);
     }
 
+    @PATCH
+    @Path("{login}/edit")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces("application/json")
+    public Boolean editUser(@PathParam("login") String login, @QueryParam("action") String action) {
+        UserOpsImpl ops = new UserOpsImpl();
+        Boolean result = false;
+        switch (action) {
+            case "revoke":
+                result = ops.revokeUser(login);
+                break;
+            case "enable":
+                result = ops.enableUser(login);
+                break;
+            case "disable":
+                result = ops.disableUser(login);
+                break;
+            default:
+                break;
+        }
+
+        return result;
+    }
+
     @DELETE
     @Path("{uid}")
     @Consumes(MediaType.APPLICATION_JSON)
