@@ -95,12 +95,12 @@ public class PowsUserService {
     @Path("{uid}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces("application/json")
-    public String deleteUser(@PathParam("uid") int uid, User deleteUser) {
+    public String deleteUser(@PathParam("uid") int uid) {
         UserOpsImpl ops = new UserOpsImpl();
         if (ops.deleteUser(uid)) {
             return "User has been deleted !!!";
         } else {
-            return "User has been deleted !!!";
+            return "User has not been deleted !!!";
         }
     }
 

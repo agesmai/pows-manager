@@ -1,14 +1,13 @@
 package com.pows.entity;
 
 import com.google.gson.Gson;
-
-import javax.json.JsonObject;
+import com.google.gson.JsonObject;
 
 public class PowsResponse {
     private String status;
-    private JsonObject data;
     private String message;
     private Integer code;
+    private JsonObject data;
 
     public String getStatus() {
         return status;
@@ -46,13 +45,13 @@ public class PowsResponse {
     public String toString() {
         return "PowsResponse{" +
                 "status='" + status + '\'' +
-                ", data=" + data +
                 ", message='" + message + '\'' +
                 ", code=" + code +
+                ", data=" + data +
                 '}';
     }
 
-    public String toJsonObject() {
+    public String toJsonString() {
         Gson gson = new Gson();
         return gson.toJson(this);
     }

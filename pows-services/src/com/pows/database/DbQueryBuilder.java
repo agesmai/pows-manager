@@ -54,13 +54,13 @@ public class DbQueryBuilder {
         return upair;
     }
 
-//    public String generateUpdatePair(String updateColumn, Number updateValue) {
-//        String upair = "";
-//        if (updateColumn != null && updateValue != null) {
-//            upair = updateColumn + " = " + String.valueOf(updateValue);
-//        }
-//        return upair;
-//    }
+    public String generateUpdatePair(String updateColumn, Number updateValue) {
+        String upair = "";
+        if (updateColumn != null && updateValue != null) {
+            upair = updateColumn + " = " + String.valueOf(updateValue);
+        }
+        return upair;
+    }
 
     public String generateUpdateSet(ArrayList<String> updatePairs) {
         StringBuilder uSet = new StringBuilder();
@@ -78,10 +78,13 @@ public class DbQueryBuilder {
         return sql;
     }
 
-//    public String DeleteQuery() {
-//        String sql = "";
-//        return sql;
-//    }
+    public String DeleteQuery(String fFrom, String fWhere) {
+        String sql = "";
+        if ((fFrom != null) && (fWhere != null)) {
+            sql = "DELETE FROM " + fFrom + " WHERE " + fWhere;
+        }
+        return sql;
+    }
 
     public String UpdateQuery(String fTable, String fSet, String fWhere) {
         String sql = "";

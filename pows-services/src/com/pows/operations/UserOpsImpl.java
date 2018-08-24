@@ -450,6 +450,50 @@ public class UserOpsImpl implements UserOps {
 
     @Override
     public Boolean deleteUser(int uid) {
-        return null;
+        if (uid < 10) {
+            System.out.println("Not support delete Uid below 10 !");
+            return false;
+        } else {
+            SchemaLoader schema = new SchemaLoader();
+            Connection conn = new DbConnectionImpl().getConnection();
+            if (conn != null) {
+                try {
+                    Statement stmt = conn.createStatement();
+                    if (UserValidation.isUserExist(uid)) {
+                        // Do delete user here
+                        String delete_sql = new DbQueryBuilder().DeleteQuery(schema.getUserTable(), "USERID LIKE '" + uid + "'");
+                        System.out.println("create sql: " + delete_sql);
+                        System.out.println("Trying to delete user...");
+                        try {
+                            stmt.executeUpdate(delete_sql);
+                            System.out.println("User " + uid + " is deleted successfully !!!");
+                            return true;
+                        } catch (SQLException e) {
+                            System.out.println(e.getMessage());
+                            return false;
+                        }
+                    } else {
+                        // User existed !!!
+                        System.out.println("User not existed !!!");
+                        return true;
+                    }
+                } catch (SQLException e) {
+                    System.out.println("Connection Failed! Check output console");
+                    e.printStackTrace();
+                    return false;
+                } finally {
+                    try {
+                        conn.close();
+                    } catch (SQLException e) {
+                        System.out.println("Connection Close Failed! Check output console");
+                        e.printStackTrace();
+                    }
+                }
+            } else {
+                System.out.println("Failed to make connection!");
+                return false;
+            }
+        }
+
     }
 }
