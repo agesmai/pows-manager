@@ -1,9 +1,12 @@
 package com.pows.service;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.pows.controller.PowsPatchDataHandler;
+import com.pows.entity.PowsPatchData;
 import com.pows.entity.User;
 import com.pows.operations.UserOpsImpl;
 
-import javax.json.JsonObject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
@@ -86,9 +89,9 @@ public class PowsUserService {
     @Path("{login}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces("application/json")
-    public User modifyUser(@PathParam("login") String login, JsonObject attributes) {
+    public User modifyUser(@PathParam("login") String login, ArrayList<PowsPatchData> operations) {
         UserOpsImpl ops = new UserOpsImpl();
-        return ops.modifyUser(login, attributes);
+        return ops.modifyUser(login, operations);
     }
 
     @PATCH
@@ -111,7 +114,41 @@ public class PowsUserService {
             default:
                 break;
         }
+        return result;
+    }
 
+    @PATCH
+    @Path("{login}/password")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces("application/json")
+    public Boolean editUser(@PathParam("login") String login, @QueryParam("action") String action, ArrayList<PowsPatchData> pdata) {
+        UserOpsImpl ops = new UserOpsImpl();
+        Boolean result = false;
+        Object opass;
+        Object npass;
+        switch (action) {
+            case "change":
+                opass = PowsPatchDataHandler.getValueOfPath(pdata, "opassword");
+                npass = PowsPatchDataHandler.getValueOfPath(pdata, "npassword");
+                if ((opass != null) && (npass != null)) {
+                    result = ops.changePassword((String) opass, (String) npass);
+                }
+                break;
+
+            case "reset":
+                npass = PowsPatchDataHandler.getValueOfPath(pdata, "npassword");
+                if (npass != null) {
+                    result = ops.resetPassword((String) npass);
+                }
+                break;
+
+            case "random":
+                result = ops.setRandomPassword();
+                break;
+
+            default:
+                break;
+        }
         return result;
     }
 

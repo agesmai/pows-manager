@@ -1,16 +1,13 @@
 package com.pows.utils;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import com.pows.entity.PowsResponse;
 import com.pows.entity.User;
 
 import java.util.ArrayList;
 
 public class JsonBuilder {
-    public static void test(String[] args) {
+    public static void main(String[] args) {
         User usr = new User("test", "Hpt123456", "enable");
         User usr1 = new User("test1", "Hpt123456", "enable");
         User usr2 = new User("test2", "Hpt123456", "enable");
@@ -28,9 +25,17 @@ public class JsonBuilder {
         JsonObject user_data = new JsonObject();
         JsonObject users_data = new JsonObject();
         user_data.add("user", gson.toJsonTree(usr));
-        user_data.add("users", gson.toJsonTree(list_user));
-
-        pr.setData(user_data);
+        users_data.add("users", gson.toJsonTree(list_user));
+        JsonArray listU = users_data.getAsJsonArray("users");
+        pr.setData(users_data);
         System.out.println("Json String: " + pr.toJsonString());
+        System.out.println("Json String: " + users_data.get("users"));
+
+        for (int i = 0; i < listU.size(); i++) {
+            JsonObject user = (JsonObject) listU.get(i);
+            System.out.println("User thu " + i + " :");
+            System.out.println("uid: " + user.get("login"));
+        }
+        System.out.println("Json String: " + listU);
     }
 }

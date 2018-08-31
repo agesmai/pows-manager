@@ -1,12 +1,15 @@
 package com.pows.operations;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.pows.database.DbConnectionImpl;
 import com.pows.database.DbQueryBuilder;
+import com.pows.entity.PowsPatchData;
 import com.pows.entity.User;
 import com.pows.utils.SchemaLoader;
 import com.pows.validations.UserValidation;
 
-import javax.json.JsonObject;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -331,6 +334,10 @@ public class UserOpsImpl implements UserOps {
             Connection conn = new DbConnectionImpl().getConnection();
             ArrayList<String> updatePairs = new ArrayList<>();
             User currentUser = this.getUserByUid(uid);
+            if (currentUser == null) {
+                System.out.println("User is not exist...");
+                return null;
+            }
 
             replaceUser.setUid(uid);
 
@@ -439,15 +446,84 @@ public class UserOpsImpl implements UserOps {
     }
 
     @Override
-    public User modifyUser(String login, JsonObject attributes) {
-        return null;
+    public User modifyUser(String login, ArrayList<PowsPatchData> operations) {
+
+        SchemaLoader schema = new SchemaLoader();
+        Connection conn = new DbConnectionImpl().getConnection();
+        ArrayList<String> updatePairs = new ArrayList<>();
+        User currentUser = this.getUserByLogin(login);
+        if (currentUser != null) {
+            if (operations != null) {
+                for (PowsPatchData operation : operations) {
+                    String attribute;
+                    Object value = null;
+                    if (operation.getTask().equals("replace")) {
+                        attribute = operation.getPath();
+                        if (!attribute.equals("")) switch (attribute) {
+                            case "USERID":
+                                updatePairs.add(new DbQueryBuilder().generateUpdatePair("USERID", (Number) operation.getValue()));
+                                break;
+                            case "LOGIN":
+                                updatePairs.add(new DbQueryBuilder().generateUpdatePair("LOGIN", (String) operation.getValue()));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            } else {
+                System.out.println("Non patch operations detected. User is not updated...");
+                return null;
+            }
+
+        } else {
+            System.out.println("User is not exist...");
+            return null;
+        }
+
+        if (conn != null) {
+            try {
+                Statement stmt = conn.createStatement();
+                String updateSet = new DbQueryBuilder().generateUpdateSet(updatePairs);
+                String sql = new DbQueryBuilder().UpdateQuery(schema.getUserTable(), updateSet, "LOGIN LIKE '" + login + "'");
+                System.out.println("update sql: " + sql);
+                System.out.println("Trying to update user...");
+                try {
+                    stmt.executeUpdate(sql);
+                    System.out.println("User: " + login + " is updated successfully !!!");
+                    return this.getUserByLogin(login);
+                } catch (SQLException e) {
+                    System.out.println(e.getMessage());
+                    System.out.println("User: " + login + " failed to update !!!");
+                    return null;
+                }
+
+            } catch (SQLException e) {
+                System.out.println("Connection Failed! Check output console");
+                e.printStackTrace();
+                return null;
+            } finally {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    System.out.println("Connection Close Failed! Check output console");
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            System.out.println("Failed to make connection! User is not updated");
+            return null;
+        }
+
     }
 
     @Override
     public Boolean revokeUser(String login) {
         if (login.equals("admin")) {
+            // Not support revoke admin user (id=0)
             return false;
         } else {
+            System.out.println("User has been revoked.");
             return true;
         }
 
@@ -456,8 +532,10 @@ public class UserOpsImpl implements UserOps {
     @Override
     public Boolean enableUser(String login) {
         if (login.equals("admin")) {
+            // Not support enable admin user (id=0)
             return false;
         } else {
+            System.out.println("User has been enabled.");
             return true;
         }
     }
@@ -465,10 +543,27 @@ public class UserOpsImpl implements UserOps {
     @Override
     public Boolean disableUser(String login) {
         if (login.equals("admin")) {
+            // Not support disable admin user (id=0)
             return false;
         } else {
+            System.out.println("User has been disabled.");
             return true;
         }
+    }
+
+    @Override
+    public Boolean resetPassword(String password) {
+        return null;
+    }
+
+    @Override
+    public Boolean changePassword(String oPassword, String nPassword) {
+        return null;
+    }
+
+    @Override
+    public Boolean setRandomPassword() {
+        return null;
     }
 
     @Override
