@@ -39,11 +39,11 @@ public interface UserOps {
 
     Boolean disableUser(String login);
 
-    Boolean resetPassword(String password);
+    Boolean resetPassword(String login, String password);
 
-    Boolean changePassword(String oPassword, String nPassword);
+    Boolean changePassword(String login, String oPassword, String nPassword);
 
-    Boolean setRandomPassword();
+    Boolean setRandomPassword(String login);
 
     // DELETE User Function (@DELETE)
     Boolean deleteUser(int uid);

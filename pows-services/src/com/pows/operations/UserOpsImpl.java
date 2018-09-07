@@ -134,7 +134,6 @@ public class UserOpsImpl implements UserOps {
         return null;
     }
 
-
     @Override
     public List<User> getAllUsers() {
         SchemaLoader schema = new SchemaLoader();
@@ -455,10 +454,8 @@ public class UserOpsImpl implements UserOps {
         if (currentUser != null) {
             if (operations != null) {
                 for (PowsPatchData operation : operations) {
-                    String attribute;
-                    Object value = null;
                     if (operation.getTask().equals("replace")) {
-                        attribute = operation.getPath();
+                        String attribute = operation.getPath();
                         if (!attribute.equals("")) switch (attribute) {
                             case "USERID":
                                 updatePairs.add(new DbQueryBuilder().generateUpdatePair("USERID", (Number) operation.getValue()));
@@ -466,11 +463,15 @@ public class UserOpsImpl implements UserOps {
                             case "LOGIN":
                                 updatePairs.add(new DbQueryBuilder().generateUpdatePair("LOGIN", (String) operation.getValue()));
                                 break;
+                            case "STATUS":
+                                updatePairs.add(new DbQueryBuilder().generateUpdatePair("STATUS", (String) operation.getValue()));
+                                break;
                             default:
                                 break;
                         }
                     }
                 }
+
             } else {
                 System.out.println("Non patch operations detected. User is not updated...");
                 return null;
@@ -482,34 +483,44 @@ public class UserOpsImpl implements UserOps {
         }
 
         if (conn != null) {
-            try {
-                Statement stmt = conn.createStatement();
-                String updateSet = new DbQueryBuilder().generateUpdateSet(updatePairs);
-                String sql = new DbQueryBuilder().UpdateQuery(schema.getUserTable(), updateSet, "LOGIN LIKE '" + login + "'");
-                System.out.println("update sql: " + sql);
-                System.out.println("Trying to update user...");
+            if (updatePairs.size() != 0) {
                 try {
-                    stmt.executeUpdate(sql);
-                    System.out.println("User: " + login + " is updated successfully !!!");
-                    return this.getUserByLogin(login);
-                } catch (SQLException e) {
-                    System.out.println(e.getMessage());
-                    System.out.println("User: " + login + " failed to update !!!");
-                    return null;
-                }
+                    Statement stmt = conn.createStatement();
+                    if (updatePairs.size() != 0) {
+                        String updateSet = new DbQueryBuilder().generateUpdateSet(updatePairs);
+                        String sql = new DbQueryBuilder().UpdateQuery(schema.getUserTable(), updateSet, "LOGIN LIKE '" + login + "'");
+                        System.out.println("update sql: " + sql);
+                        System.out.println("Trying to update user...");
+                        try {
+                            stmt.executeUpdate(sql);
+                            System.out.println("User: " + login + " is updated successfully !!!");
+                            return this.getUserByLogin(login);
+                        } catch (SQLException e) {
+                            System.out.println(e.getMessage());
+                            System.out.println("User: " + login + " failed to update !!!");
+                            return null;
+                        }
+                    } else {
+                        return null;
+                    }
 
-            } catch (SQLException e) {
-                System.out.println("Connection Failed! Check output console");
-                e.printStackTrace();
-                return null;
-            } finally {
-                try {
-                    conn.close();
                 } catch (SQLException e) {
-                    System.out.println("Connection Close Failed! Check output console");
+                    System.out.println("Connection Failed! Check output console");
                     e.printStackTrace();
+                    return null;
+                } finally {
+                    try {
+                        conn.close();
+                    } catch (SQLException e) {
+                        System.out.println("Connection Close Failed! Check output console");
+                        e.printStackTrace();
+                    }
                 }
+            } else {
+                System.out.println("Non task detectee! User is not updated");
+                return null;
             }
+
         } else {
             System.out.println("Failed to make connection! User is not updated");
             return null;
@@ -552,17 +563,17 @@ public class UserOpsImpl implements UserOps {
     }
 
     @Override
-    public Boolean resetPassword(String password) {
+    public Boolean resetPassword(String login, String password) {
         return null;
     }
 
     @Override
-    public Boolean changePassword(String oPassword, String nPassword) {
+    public Boolean changePassword(String login, String oPassword, String nPassword) {
         return null;
     }
 
     @Override
-    public Boolean setRandomPassword() {
+    public Boolean setRandomPassword(String login) {
         return null;
     }
 

@@ -67,6 +67,9 @@ public class DbQueryBuilder {
         for (String upair : updatePairs) {
             uSet.append(", ").append(upair);
         }
+        if (!uSet.toString().equals("") && uSet.length() > 0 && uSet.charAt(0) == ',') {
+            uSet = new StringBuilder(uSet.substring(2, uSet.length()));
+        }
         return uSet.toString();
     }
 

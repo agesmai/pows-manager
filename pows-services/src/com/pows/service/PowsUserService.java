@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
 
-// The Java class will be hosted at the URI path "/api"
+// The Java class will be hosted at the URI path "/api/*"
 @Path("/user")
 public class PowsUserService {
 
@@ -129,19 +129,19 @@ public class PowsUserService {
                 opass = PowsPatchDataHandler.getValueOfPath(pdata, "opassword");
                 npass = PowsPatchDataHandler.getValueOfPath(pdata, "npassword");
                 if ((opass != null) && (npass != null)) {
-                    result = ops.changePassword((String) opass, (String) npass);
+                    result = ops.changePassword(login, (String) opass, (String) npass);
                 }
                 break;
 
             case "reset":
                 npass = PowsPatchDataHandler.getValueOfPath(pdata, "npassword");
                 if (npass != null) {
-                    result = ops.resetPassword((String) npass);
+                    result = ops.resetPassword(login, (String) npass);
                 }
                 break;
 
             case "random":
-                result = ops.setRandomPassword();
+                result = ops.setRandomPassword(login);
                 break;
 
             default:

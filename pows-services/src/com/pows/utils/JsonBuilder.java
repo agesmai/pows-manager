@@ -1,6 +1,7 @@
 package com.pows.utils;
 
 import com.google.gson.*;
+import com.pows.entity.PowsPatchData;
 import com.pows.entity.PowsResponse;
 import com.pows.entity.User;
 
@@ -37,5 +38,14 @@ public class JsonBuilder {
             System.out.println("uid: " + user.get("login"));
         }
         System.out.println("Json String: " + listU);
+
+        PowsPatchData data1 = new PowsPatchData("replace", "/status", "disable");
+        PowsPatchData data2 = new PowsPatchData("replace", "/login", "abc");
+        PowsPatchData data3 = new PowsPatchData("replace", "/uid", 10);
+        ArrayList<PowsPatchData> pdata = new ArrayList<>();
+        pdata.add(data1);
+        pdata.add(data2);
+        pdata.add(data3);
+        System.out.println("pdata: " + gson.toJson(pdata));
     }
 }
