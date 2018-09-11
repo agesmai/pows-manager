@@ -1,0 +1,39 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/pows-admin/dist
+/pows-admin/tmp
+/pows-admin/out-tsc
+
+# dependencies
+/pows-admin/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/pows-admin/.sass-cache
+/pows-admin/connect.lock
+/pows-admin/coverage
+/pows-admin/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/pows-admin/typings
+
+# System Files
+.DS_Store
+Thumbs.db
