@@ -6,39 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b256c3f-f493-458f-9d30-1cff8a47366c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pows-admin/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/pows-admin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/src/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pows-admin/tslint.json" afterDir="false" />
+    <list default="true" id="3b256c3f-f493-458f-9d30-1cff8a47366c" name="Default Changelist" comment="rebuild pows-admin">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pvanh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/pvanh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/database/DbQueryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/database/DbQueryBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/objects/PropertiesStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/objects/TargetSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/objects/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/operations/UserOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/operations/UserOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/operations/UserOpsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/operations/UserOpsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/service/PowsUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/service/PowsUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/utils/JsonBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/utils/JsonBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/validations/UserValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowsManager/WEB-INF/classes/com/pows/validations/UserValidation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/MyApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/database/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/database/DbConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/database/DbConnectionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/database/DbQueryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/database/OracleDbConnectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/objects/PropertiesStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/objects/TargetSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/objects/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/PropertiesStoreOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/PropertiesStoreOpsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/TargetSystemOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/TargetSystemOpsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/UserOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/operations/UserOpsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/service/AuthenticationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/service/PowsPropertiesStoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/service/PowsTargetSystemService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/service/PowsUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/utils/JsonBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/utils/SchemaLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/utils/SymmetricKeyCrypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/utils/TestCrypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/utils/TestProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/validations/PropertiesStoreValidation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/validations/TargetSystemValidation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pows-services/com/pows/validations/UserValidation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pows-admin/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/pows-admin/src/tslint.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,177 +93,187 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@odb.oracle.poc" type="feb32156:DbDataSourceImpl" />
         <item name="IAMPOC: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ISF_PROPERTIES_STORE: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@odb.oracle.poc" type="feb32156:DbDataSourceImpl" />
+        <item name="IAMPOC: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ISF_TARGET_SYSTEM: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@odb.oracle.poc" type="feb32156:DbDataSourceImpl" />
+        <item name="IAMPOC: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ISF_USERS: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@odb.oracle.poc" type="feb32156:DbDataSourceImpl" />
+        <item name="IAMPOC: schema" type="ac44c5e0:OracleImplModel$Schema" />
         <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideWarnings" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1119240093">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.40" value="3" />
+          <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="3" />
+          <entry key="project.open.time.45" value="3" />
           <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="3" />
           <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ISF_PROPERTIES_STORE" value="1" />
-          <entry key="ISF_USERS" value="8" />
+          <entry key="ISF_PROPERTIES_STORE" value="2" />
+          <entry key="ISF_USERS" value="9" />
           <entry key="ISF_USERS_SEQ" value="1" />
           <entry key="class" value="2" />
-          <entry key="css" value="1" />
+          <entry key="css" value="3" />
+          <entry key="html" value="6" />
           <entry key="iml" value="4" />
-          <entry key="java" value="91" />
-          <entry key="json" value="3" />
+          <entry key="java" value="112" />
+          <entry key="js" value="2" />
+          <entry key="json" value="6" />
           <entry key="jsp" value="2" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="properties" value="6" />
           <entry key="sql" value="1" />
-          <entry key="ts" value="2" />
+          <entry key="svg" value="8" />
+          <entry key="ts" value="14" />
           <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="CSS" value="1" />
-          <entry key="Database Element" value="9" />
+          <entry key="CSS" value="3" />
+          <entry key="Database Element" value="11" />
+          <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="91" />
-          <entry key="JSON" value="2" />
+          <entry key="JAVA" value="112" />
+          <entry key="JSON" value="5" />
           <entry key="JSP" value="2" />
-          <entry key="Markdown" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="2" />
           <entry key="Properties" value="5" />
           <entry key="SQL" value="1" />
+          <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
-          <entry key="TypeScript" value="2" />
+          <entry key="TypeScript" value="14" />
           <entry key="XML" value="10" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cell" value="8" />
           <entry key="dummy" value="39" />
+          <entry key="html" value="144" />
           <entry key="iml" value="3" />
-          <entry key="java" value="7856" />
-          <entry key="json" value="5" />
+          <entry key="java" value="12568" />
+          <entry key="json" value="17" />
+          <entry key="md" value="2" />
           <entry key="properties" value="217" />
           <entry key="sql" value="189" />
+          <entry key="ts" value="24" />
+          <entry key="txt" value="178" />
           <entry key="xml" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="144" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="7856" />
-          <entry key="JSON" value="5" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="JAVA" value="12568" />
+          <entry key="JSON" value="17" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="217" />
           <entry key="Properties" value="217" />
           <entry key="SQL" value="12" />
-          <entry key="Scratch" value="177" />
+          <entry key="Scratch" value="185" />
+          <entry key="TypeScript" value="24" />
           <entry key="XML" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="1" />
-          <entry key="TsLintLanguageService" value="1" />
+          <entry key="Angular2LanguageService" value="4" />
+          <entry key="TsLintLanguageService" value="4" />
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PowsManager" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/validations/UserValidation.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pows-admin/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isUserExist#0;class#UserValidation#0" />
-                <element signature="e#1978#1979#0" expanded="true" />
-                <element signature="e#2005#2006#0" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
-                <element signature="e#2090#2091#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="692">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOpsImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="334" selection-start-line="334" selection-end-line="334" />
-              <folding>
-                <element signature="method#getUserObject#0;class#UserOpsImpl#0" />
-                <element signature="method#getListUserObject#0;class#UserOpsImpl#0" />
-                <element signature="method#getUserByUid#0;class#UserOpsImpl#0" />
-                <element signature="method#getUserByLogin#0;class#UserOpsImpl#0" />
-                <element signature="method#getAllUsers#0;class#UserOpsImpl#0" />
-                <element signature="method#getUserListWithLimit#0;class#UserOpsImpl#0" />
-                <element signature="method#getUserListByUid#0;class#UserOpsImpl#0" />
-                <element signature="method#createUser#0;class#UserOpsImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/JsonBuilder.java">
+        <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab7f0db9-0476-4680-9486-358af9be20ff/schema/IAMPOC/table/ISF_USERS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="LOGIN = 'admin'" />
-              </filtering>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,29 +290,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pows-admin" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pows-services/pows-services.iml" />
-        <option value="$PROJECT_DIR$/pows-services/src/pows-services.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/PowsApi.java" />
-        <option value="$PROJECT_DIR$/pows-admin/angular.json" />
-        <option value="$PROJECT_DIR$/pows-admin/package.json" />
-        <option value="$PROJECT_DIR$/pows-admin/tsconfig.json" />
-        <option value="$PROJECT_DIR$/pows-admin/src/polyfills.ts" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsApiImpl.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsApi.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/database/DbQuery.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.properties" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/config/application.properties" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/utils/SymmetricKeyCrypto.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/utils/TestProperties.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/utils/TestCrypto.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab7f0db9-0476-4680-9486-358af9be20ff/console.sql" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/core/PreparedQuery.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOps.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/database/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/validations/TargetSystemValidation.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/validations/PropertiesStoreValidation.java" />
@@ -304,23 +319,51 @@
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/pows-services/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/objects/User.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/database/DbQueryBuilder.java" />
         <option value="$PROJECT_DIR$/pows-services/src/MyApplication.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsApiService.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/MyApplication.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsTargetSystemService.java" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsPropertiesStoreService.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/utils/JsonBuilder.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsUserService.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOps.java" />
-        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOpsImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pows-services/src/com/pows/validations/UserValidation.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/entity/PowsResponse.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/entity/PowsPatchData.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/controller/PowsPatchDataHandler.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/database/DbQueryBuilder.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/utils/JsonBuilder.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOps.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/service/PowsUserService.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOps.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOpsImpl.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOpsImpl.java" />
+        <option value="$PROJECT_DIR$/pows-services/src/com/pows/operations/PropertiesStoreOps.java" />
+        <option value="$PROJECT_DIR$/pows-admin/src/app/pages/pages.component.html" />
+        <option value="$PROJECT_DIR$/pows-admin/src/tslint.json" />
+        <option value="$PROJECT_DIR$/pows-admin/src/app/pages/pages.component.ts" />
+        <option value="$PROJECT_DIR$/pows-admin/src/index.html" />
+        <option value="$PROJECT_DIR$/pows-admin/src/polyfills.ts" />
+        <option value="$PROJECT_DIR$/pows-admin/package.json" />
+        <option value="$PROJECT_DIR$/pows-admin/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/pows-admin/src/assets/images/square_pattern_cosmic.svg" />
+        <option value="$PROJECT_DIR$/pows-admin/src/assets/images/square_pattern.svg" />
+        <option value="$PROJECT_DIR$/pows-admin/src/app/app-routing.module.ts" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="$USER_HOME$/AppData/Roaming/npm/node_modules/bower" />
+    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/pows-admin/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -353,17 +396,25 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="PowsManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pows-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PowsManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="pows-services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,20 +427,11 @@
               <item name="pows-services" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PowsManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pows-services" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pows" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,6 +444,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.11.3" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Shared-Lib/jaxrs-ri/api/javax.ws.rs-api-2.1.jar!/" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -412,23 +455,27 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="xml.catalog" />
     <property name="ts.external.directory.path" value="E:\NetbeanWorkspace\PowsManager\pows-admin\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.pows" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\NetbeanWorkspace\PowsManager\pows-services\src\com\pows\utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\NetbeanWorkspace\PowsManager\pows-services\resources" />
       <recent name="E:\NetbeanWorkspace\PowsManager\pows-services\src\com\pows\config" />
       <recent name="E:\NetbeanWorkspace\PowsManager\pows-services\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.pows" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\NetbeanWorkspace\PowsManager\pows-admin\src\app" />
+      <recent name="E:\NetbeanWorkspace\PowsManager\pows-admin\src\assets\images" />
+      <recent name="E:\NetbeanWorkspace\PowsManager\pows-admin\src\assets\skins" />
+      <recent name="E:\NetbeanWorkspace\PowsManager\pows-services\src\com\pows\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,7 +490,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.0">
+  <component name="RunManager" selected="Cucumber java.All Features in: pows-admin">
     <configuration name="JsonBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pows.utils.JsonBuilder" />
       <module name="pows-services" />
@@ -483,12 +530,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProperties" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pows.utils.TestProperties" />
-      <module name="pows-services" />
+    <configuration name="All Features in: pows-admin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/pows-admin" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="pows-admin" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: pows-admin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pows.utils.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -588,22 +639,34 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/pows-admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 5.0.0" />
       <item itemvalue="JavaScript Debug.Angular Application (pows-admin)" />
       <item itemvalue="npm.Angular CLI Server (pows-admin)" />
       <item itemvalue="Protractor.E2E Tests (pows-admin)" />
       <item itemvalue="Application.OracleDbConnectionTest" />
-      <item itemvalue="Application.TestProperties" />
       <item itemvalue="Application.TestCrypto" />
       <item itemvalue="Application.JsonBuilder" />
+      <item itemvalue="Cucumber java.All Features in: pows-admin" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="Cucumber java.All Features in: pows-admin" />
         <item itemvalue="Application.JsonBuilder" />
         <item itemvalue="Application.OracleDbConnectionTest" />
         <item itemvalue="Application.TestCrypto" />
-        <item itemvalue="Application.TestProperties" />
       </list>
     </recent_temporary>
   </component>
@@ -638,11 +701,110 @@
       <workItem from="1534220575904" duration="772000" />
       <workItem from="1534307804815" duration="5495000" />
       <workItem from="1534409327631" duration="450000" />
+      <workItem from="1534412378392" duration="2623000" />
+      <workItem from="1534474256176" duration="10634000" />
+      <workItem from="1534906501097" duration="631000" />
+      <workItem from="1534907464867" duration="1045000" />
+      <workItem from="1534908587752" duration="1106000" />
+      <workItem from="1534991165163" duration="4456000" />
+      <workItem from="1535008562038" duration="2155000" />
+      <workItem from="1535079789899" duration="6087000" />
+      <workItem from="1535096828629" duration="5541000" />
+      <workItem from="1535337245494" duration="3706000" />
+      <workItem from="1535425038488" duration="3967000" />
+      <workItem from="1535599562992" duration="6803000" />
+      <workItem from="1535679800218" duration="14060000" />
+      <workItem from="1536119548490" duration="588000" />
+      <workItem from="1536133618448" duration="3353000" />
+      <workItem from="1536201690805" duration="588000" />
+      <workItem from="1536221116434" duration="72000" />
+      <workItem from="1536221383228" duration="3587000" />
+      <workItem from="1536285694223" duration="2709000" />
+      <workItem from="1536303833760" duration="4105000" />
+      <workItem from="1536635003462" duration="11703000" />
     </task>
+    <task id="LOCAL-00001" summary="Add update user services">
+      <created>1534498686885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534498686885</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit pows-admin">
+      <created>1534991484620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534991484620</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor packet name 'objects' to 'entity'&#10;add Pows-Response class">
+      <created>1534994677274</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534994677274</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor packet name 'objects' to 'entity'&#10;add Pows-Response class">
+      <created>1535085929578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535085929578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add some function for user service">
+      <created>1535099448631</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1535099448631</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add some function for user service">
+      <created>1535689316527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535689316527</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add some function for user service">
+      <created>1535689531154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535689531154</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add some function for user service">
+      <created>1536305206829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536305206829</updated>
+    </task>
+    <task id="LOCAL-00009" summary="rebuild pows-admin">
+      <created>1536658952085</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536658952085</updated>
+    </task>
+    <task id="LOCAL-00010" summary="rebuild pows-admin">
+      <created>1536659591341</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536659591341</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rebuild pows-admin">
+      <created>1536659643424</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536659643424</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111022000" />
+    <option name="totallyTimeSpent" value="200541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,39 +818,40 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7264" visible="true" weight="0.28944564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5783866" visible="true" weight="0.24147122" />
       <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.25746268" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.4216134" side_tool="true" visible="true" weight="0.24147122" />
       <window_info id="Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.4216134" side_tool="true" weight="0.21801706" />
       <window_info id="Web" order="5" sideWeight="0.2736" side_tool="true" weight="0.27345416" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.2950644" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.2950644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
-      <window_info anchor="bottom" id="Database Changes" order="7" sideWeight="0.49946696" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.32939914" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.40236053" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32939914" />
-      <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.49946696" weight="0.19742489" />
-      <window_info anchor="bottom" id="TypeScript" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.32939914" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.26180258" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32939914" />
+      <window_info anchor="bottom" id="Database Changes" order="7" sideWeight="0.4968017" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4968017" weight="0.32188842" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.2950644" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49840087" weight="0.29291844" />
+      <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.49840087" weight="0.19742489" />
+      <window_info anchor="bottom" id="TypeScript" order="12" sideWeight="0.4989339" weight="0.32939914" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49733475" weight="0.32939914" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.49946696" weight="0.26180258" />
       <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.49946696" weight="0.32939914" />
       <window_info anchor="bottom" id="Spring" order="16" weight="0.32939914" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32939914" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="18" weight="0.32939914" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.4992" visible="true" weight="0.18603411" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.4992" visible="true" weight="0.20042644" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="CDI" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.21801706" />
+      <window_info anchor="right" id="CDI" order="6" weight="0.32995737" />
       <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="7" sideWeight="0.5008" side_tool="true" visible="true" weight="0.18603411" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.15618336" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,159 +886,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add update user services" />
+    <MESSAGE value="commit pows-admin" />
+    <MESSAGE value="refactor packet name 'objects' to 'entity'&#10;add Pows-Response class" />
+    <MESSAGE value="add some function for user service" />
+    <MESSAGE value="rebuild pows-admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuild pows-admin" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pows-services/src/test.java" />
-    <entry file="file://$PROJECT_DIR$/pows-admin/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsApiImpl.java" />
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsApi.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.properties" />
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/SymmetricKeyCrypto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="2215" column="24" selection-start-line="2215" selection-start-column="24" selection-end-line="2215" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ab7f0db9-0476-4680-9486-358af9be20ff/schema/IAMPOC/table/ISF_PROPERTIES_STORE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab7f0db9-0476-4680-9486-358af9be20ff/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/core/PreparedQuery.java" />
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOpsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/PropertiesStoreOpsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/PropertiesStoreOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/validations/PropertiesStoreValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/validations/TargetSystemValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/database/DbConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/TestProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="56" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/database/OracleDbConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/objects/PropertiesStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/objects/TargetSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/database/DbConnectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-732">
-          <caret line="37" column="63" lean-forward="true" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/SchemaLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/web/WEB-INF/sun-web.xml">
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/security/ResourceServerConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/pows-services/web/WEB-INF/spring-security.xml" />
     <entry file="file://$PROJECT_DIR$/pows-services/pows-services.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -905,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/database/DbQueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -926,17 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/objects/User.java">
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsTargetSystemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -953,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Shared-Lib/jaxrs-ri/api/javax.ws.rs-api-2.1.jar!/javax/ws/rs/core/Response.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2742">
@@ -967,37 +969,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOpsImpl.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="334" selection-start-line="334" selection-end-line="334" />
-          <folding>
-            <element signature="method#getUserObject#0;class#UserOpsImpl#0" />
-            <element signature="method#getListUserObject#0;class#UserOpsImpl#0" />
-            <element signature="method#getUserByUid#0;class#UserOpsImpl#0" />
-            <element signature="method#getUserByLogin#0;class#UserOpsImpl#0" />
-            <element signature="method#getAllUsers#0;class#UserOpsImpl#0" />
-            <element signature="method#getUserListWithLimit#0;class#UserOpsImpl#0" />
-            <element signature="method#getUserListByUid#0;class#UserOpsImpl#0" />
-            <element signature="method#createUser#0;class#UserOpsImpl#0" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/JsonBuilder.java">
+    <entry file="file://$PROJECT_DIR$/pows-admin/e2e/src/app.po.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/e2e/protractor.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ab7f0db9-0476-4680-9486-358af9be20ff/schema/IAMPOC/table/ISF_PROPERTIES_STORE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/pows-services/lib/gson-2.8.5-sources.jar!/com/google/gson/JsonObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/validations/UserValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/controller/PowsPatchDataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1010,27 +1047,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsUserService.java">
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/utils/JsonBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="494">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOpsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="205" column="63" selection-start-line="205" selection-start-column="63" selection-end-line="205" selection-end-column="63" />
+          <folding>
+            <element signature="method#getUserObject#0;class#UserOpsImpl#0" />
+            <element signature="method#getListUserObject#0;class#UserOpsImpl#0" />
+            <element signature="method#getUserByUid#0;class#UserOpsImpl#0" />
+            <element signature="method#getUserByLogin#0;class#UserOpsImpl#0" />
+            <element signature="method#getAllUsers#0;class#UserOpsImpl#0" />
+            <element signature="method#getUserListWithLimit#0;class#UserOpsImpl#0" />
+            <element signature="method#getUserListByUid#0;class#UserOpsImpl#0" />
+            <element signature="method#createUser#0;class#UserOpsImpl#0" />
+            <element signature="method#updateUser#0;class#UserOpsImpl#0" />
+            <element signature="method#getUserId#0;class#UserOpsImpl#0" />
+            <element signature="method#modifyUser#0;class#UserOpsImpl#0" />
+            <element signature="method#revokeUser#0;class#UserOpsImpl#0" />
+            <element signature="method#enableUser#0;class#UserOpsImpl#0" />
+            <element signature="method#disableUser#0;class#UserOpsImpl#0" />
+            <element signature="method#deleteUser#0;class#UserOpsImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/entity/PowsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/validations/UserValidation.java">
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/UserOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/entity/PowsPatchData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/database/DbQueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="71" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="98" column="99" selection-start-line="98" selection-start-column="99" selection-end-line="98" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isUserExist#0;class#UserValidation#0" />
-            <element signature="e#1978#1979#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="method#getClichedMessage#0;class#PowsUserService#0" />
+            <element signature="method#getUsers#0;class#PowsUserService#0" />
+            <element signature="method#getUserListWithLimit#0;class#PowsUserService#0" />
+            <element signature="method#getUserListByUid#0;class#PowsUserService#0" />
+            <element signature="method#getUserByLogin#0;class#PowsUserService#0" />
+            <element signature="method#getUidByLogin#0;class#PowsUserService#0" />
+            <element signature="method#createNewUser#0;class#PowsUserService#0" />
+            <element signature="method#modifyUser#0;class#PowsUserService#0" />
+            <element signature="method#editUser#0;class#PowsUserService#0" />
+            <element signature="method#editUser#1;class#PowsUserService#0" />
+            <element signature="method#deleteUser#0;class#PowsUserService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/service/PowsTargetSystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/PropertiesStoreOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-services/src/com/pows/operations/TargetSystemOpsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/pages/pages.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/polyfills.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+          <folding>
+            <element signature="e#925#953#0" expanded="true" />
+            <element signature="e#3146#3173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/pages/pages.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/pages/pages.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/assets/skins/agesmai/fonts/tinymce-small.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/assets/images/square_pattern_cosmic.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/assets/images/square_pattern.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pows-admin/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,9 +1310,9 @@
         <settings>
           <artifact-editor>
             <show-content>
+              <type id="library" />
               <type id="artifact" />
               <type id="javaee-facet-resources" />
-              <type id="library" />
               <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
@@ -1108,11 +1365,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>pows-services</last-edited>
+          <last-edited>pows-admin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

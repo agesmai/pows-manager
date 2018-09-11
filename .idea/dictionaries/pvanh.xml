@@ -2,11 +2,15 @@
   <dictionary name="pvanh">
     <words>
       <w>iampoc</w>
+      <w>npass</w>
+      <w>opass</w>
       <w>orcl</w>
+      <w>pdata</w>
       <w>pows</w>
       <w>propstore</w>
       <w>rownum</w>
       <w>targetsystem</w>
+      <w>upair</w>
       <w>userid</w>
     </words>
   </dictionary>
