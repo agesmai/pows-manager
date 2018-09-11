@@ -78,3 +78,9 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import 'core-js/es7/array';
+import 'core-js/es7/object';
+
+if (typeof SVGElement.prototype.contains === 'undefined') {
+  SVGElement.prototype.contains = HTMLDivElement.prototype.contains;
+}
