@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./pages.component.css']
 })
 export class PagesComponent implements OnInit {
-  pageName = 'Windstorm';
+  pageName = 'Display';
 
   constructor() {
 

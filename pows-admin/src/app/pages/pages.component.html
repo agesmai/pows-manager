@@ -1,3 +1,26 @@
-<p>
-  {{pageName}}
-</p>
+<div id="pows-header">
+  <pows-header></pows-header>
+</div>
+<div id="left-menu">
+  <ul>
+    <li>
+      <a [routerLink]="['dashboard']">Dash Board</a>
+    </li>
+    <li>
+      <a [routerLink]="['pows-user']">Pows User</a>
+    </li>
+    <li>
+      <a [routerLink]="['target-systems']">Target Systems</a>
+    </li>
+    <li>
+      <a [routerLink]="['properties-store']">Properties Store</a>
+    </li>
+  </ul>
+</div>
+<div class="app-body">
+  <a>{{pageName}}</a>
+  <router-outlet></router-outlet>
+</div>
+<div id="pows-footer">
+  <pows-footer></pows-footer>
+</div>
